@@ -1,8 +1,7 @@
-package com.cn.config;
+package com.cn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
@@ -10,12 +9,11 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @date 2018年12月22日 23点26分
  */
 @EnableEurekaClient
-@EnableConfigServer
 @SpringBootApplication
-public class SpringCloudEurekaApplication {
+public class SpringCloudProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudEurekaApplication.class, args);
+        SpringApplication.run(SpringCloudProviderApplication.class, args);
     }
 
 }

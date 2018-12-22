@@ -18,6 +18,8 @@
     <modules>
         <module>springCloudShop-eureka</module>
         <module>springCloudShop-config</module>
+        <module>springCloudShop-provider</module>
+        <module>springCloudShop-provider</module>
     </modules>
 
     <properties>
