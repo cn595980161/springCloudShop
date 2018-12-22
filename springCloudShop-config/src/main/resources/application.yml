@@ -4,6 +4,15 @@ server:
 spring:
   application:
     name: @pom.artifactId@
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cn595980161/springCloudShop.git
+          username:
+          password:
+          search-paths:
+
 
 eureka:
   client:
@@ -11,4 +20,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+
+
 
