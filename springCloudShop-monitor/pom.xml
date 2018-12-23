@@ -9,22 +9,22 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springCloudShop-config</artifactId>
+    <artifactId>springCloudShop-monitor</artifactId>
     <packaging>jar</packaging>
 
-    <name>springCloudShop-config</name>
-    <description>配置中心</description>
+    <name>springCloudShop-monitor</name>
+    <description>监控中心</description>
 
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
     </dependencies>

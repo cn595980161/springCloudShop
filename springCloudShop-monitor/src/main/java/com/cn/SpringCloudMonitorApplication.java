@@ -1,5 +1,6 @@
 package com.cn;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -8,12 +9,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @author CN
  * @date 2018年12月22日 23点26分
  */
-//@EnableEurekaClient
+@EnableEurekaClient
+@EnableAdminServer
 @SpringBootApplication
-public class SpringCloudProviderApplication {
+public class SpringCloudMonitorApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudProviderApplication.class, args);
+        SpringApplication.run(SpringCloudMonitorApplication.class, args);
     }
 
 }
