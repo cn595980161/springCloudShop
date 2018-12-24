@@ -1,4 +1,4 @@
-package com.cn;
+package com.cn.monitor;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
